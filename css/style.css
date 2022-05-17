@@ -254,6 +254,9 @@ button {
   padding: 0px;
   text-align: left;
 }
+.carrinho-button:hover {
+  text-decoration: underline;
+}
 .total-compra {
   max-width: 345px;
   max-height: 126px;
