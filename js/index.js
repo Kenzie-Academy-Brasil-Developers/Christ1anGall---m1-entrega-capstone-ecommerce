@@ -327,11 +327,11 @@ function pesquisa() {
     input = input.toLowerCase()
 
     let itens = document.querySelectorAll('.li-card')
-    let liTag = document.querySelectorAll('.tag')
+    let nameItem = document.querySelectorAll('.nameItem')
 
 
     for (let ind = 0; ind < itens.length; ind++) {
-        if (!liTag[ind].childNodes[0].data.toLowerCase().includes(input)) {
+        if (!nameItem[ind].childNodes[0].data.toLowerCase().includes(input)) {
             itens[ind].style.display = 'none'
         } else {
             itens[ind].style.display = 'list-item'
