@@ -90,7 +90,7 @@ function renderLi(value) {
     pDescriptionCard.innerText = value.description;
     pValueCard.innerText = `R$ ${value.value.toFixed(2)}`;
     pButtonCard.innerText = value.addCart;
-    pButtonCard.id = value.id;
+
 
     pButtonCard.addEventListener("click", () => {
         dataCart.push(value);
@@ -155,7 +155,7 @@ function renderLiFilter(value, filter) {
         const pButtonCard = document.createElement("button");
         pButtonCard.classList.add("cartButton");
         pButtonCard.classList.add("font");
-        pButtonCard.id = value.id;
+
 
         divCard.appendChild(pTagCard);
         divCard.appendChild(h3Card);
@@ -171,7 +171,7 @@ function renderLiFilter(value, filter) {
         pDescriptionCard.innerText = value.description;
         pValueCard.innerText = `R$ ${value.value.toFixed(2)}`;
         pButtonCard.innerText = value.addCart;
-        pButtonCard.id = value.id;
+
 
         pButtonCard.addEventListener("click", () => {
             dataCart.push(value);
@@ -280,7 +280,7 @@ function renderLiCarShop(value) {
     const pButtonCart = document.createElement("button");
     pButtonCart.classList.add("carrinho-button");
     pButtonCart.classList.add("font");
-    pButtonCart.id = value.id;
+
 
     divCard.appendChild(h3Card);
     divCard.appendChild(pValueCard);
@@ -291,7 +291,7 @@ function renderLiCarShop(value) {
     h3Card.innerText = value.nameItem;
     pValueCard.innerText = `R$ ${value.value.toFixed(2)}`;
     pButtonCart.innerText = "Remover produto";
-    pButtonCart.id = value.id;
+
 
     pButtonCart.addEventListener("click", function () {
 
@@ -321,3 +321,25 @@ function renderLiCarShop(value) {
 data.forEach((value) => {
     renderLiFilter(value, "All");
 });
+
+function pesquisa() {
+    let input = document.getElementById('pesquisaCarrinho').value
+    input = input.toLowerCase()
+
+    let itens = document.querySelectorAll('.li-card')
+    let liTag = document.querySelectorAll('.tag')
+
+
+    for (let ind = 0; ind < itens.length; ind++) {
+        if (!liTag[ind].childNodes[0].data.toLowerCase().includes(input)) {
+            itens[ind].style.display = 'none'
+        } else {
+            itens[ind].style.display = 'list-item'
+        }
+    }
+}
+const buttonPesquisa = document.querySelector('.button__pesquisa')
+buttonPesquisa.addEventListener('click', () => {
+
+    pesquisa()
+})
