@@ -13,106 +13,19 @@
 <body>
     <header class="navbar">
         <h1 class="Logo font">Weartake</h1>
-        <menu class="navbar-links">
-            <button class="button font button__nav">Todos</button>
+        <div class="navbar-links">
+            <button id="a" class="button font button__nav"><strong>Todos</strong></button>
             <button class="button font button__nav">Acessórios</button>
             <button class="button font button__nav">Calçados</button>
             <button class="button font button__nav">Camisetas</button>
-        </menu>
+
+        </div>
     </header>
     <section class="container">
         <section class="">
             <ul class="ul-card font">
-                <li class="li-card">
-                    <figure class="img-container">
-                        <img class="card-img" src="./img/jaqueta.svg" alt="" />
-                    </figure>
-                    <div class="card-info font">
-                        <p class="tag font">Camisetas</p>
-                        <h3 class="nameItem font">Lightweight Jacket</h3>
-                        <p class="description font">
-                            Adicione um pouco de energia ao seu guarda-roupa de inverno com
-                            esta jaqueta vibrante...
-                        </p>
-                        <p class="value">R$ 100.00</p>
-                        <button class="font cartButton">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="li-card">
-                    <figure class="img-container">
-                        <img class="card-img" src="./img/gorro.svg" alt="" />
-                    </figure>
-                    <div class="card-info font">
-                        <p class="tag font">Acessórios</p>
-                        <h3 class="nameItem font">Black Hat</h3>
-                        <p class="description font">
-                            O gorro Next.js chegou! Esta beldade bordada tem um ajuste
-                            confortável que garante que...
-                        </p>
-                        <p class="value">R$ 100.00</p>
-                        <button class="font cartButton">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="li-card">
-                    <figure class="img-container">
-                        <img class="card-img" src="./img/mascara.svg" alt="" />
-                    </figure>
-                    <div class="card-info font">
-                        <p class="tag font">Acessórios</p>
-                        <h3 class="nameItem font">Mask</h3>
-                        <p class="description font">
-                            Esta máscara facial durável é feita de duas camadas de tecido
-                            tratado e possui presilhas...
-                        </p>
-                        <p class="value">R$ 100.00</p>
-                        <button class="font cartButton">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="li-card">
-                    <figure class="img-container">
-                        <img class="card-img" src="./img/camiseta_branca.svg" alt="" />
-                    </figure>
-                    <div class="card-info font">
-                        <p class="tag font">Camisetas</p>
-                        <h3 class="nameItem font">T-Shirt</h3>
-                        <p class="description font">
-                            Esta t-shirt é imprescindível no seu guarda-roupa, combinando o
-                            caimento intemporal de...
-                        </p>
-                        <p class="value">R$ 100.00</p>
-                        <button class="font cartButton">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="li-card">
-                    <figure class="img-container">
-                        <img class="card-img" src="./img/camiseta_preta.svg" alt="" />
-                    </figure>
-                    <div class="card-info font">
-                        <p class="tag font">Camisetas</p>
-                        <h3 class="nameItem font">Short-Sleeve T-Shirt</h3>
-                        <p class="description font">
-                            Agora você encontrou a camiseta básica do seu guarda-roupa. É
-                            feito de um mais fino...
-                        </p>
-                        <p class="value">R$ 100.00</p>
-                        <button class="font cartButton">Adicionar ao carrinho</button>
-                    </div>
-                </li>
-                <li class="li-card">
-                    <figure class="img-container">
-                        <img class="card-img" src="./img/moletom.svg" alt="" />
-                    </figure>
-                    <div class="card-info font">
-                        <p class="tag font">Camisetas</p>
-                        <h3 class="nameItem font">Champion Packable Jacket</h3>
-                        <p class="description font">
-                            Proteja-se dos elementos com esta jaqueta embalável Champion.
-                            Esta jaqueta de poliést...
-                        </p>
-                        <p class="value">R$ 100.00</p>
-                        <button class="font cartButton">Adicionar ao carrinho</button>
-                    </div>
-                </li>
+
+
             </ul>
         </section>
         <section class="cart">
@@ -129,54 +42,22 @@
                 <p class="carrinho-text font">Carrinho de compras</p>
                 <div class="carrinho-itens font">
                     <ul class="ul-carrinho font">
-                        <li class="li-carrinho">
-                            <figure class="carrinho-img-container">
-                                <img class="carrinho-img" src="./img/jaqueta.svg" alt="" />
-                            </figure>
-                            <div class="carrinho-descricao font">
-                                <h3 class="carrinho-nameItem font">Lightweight Jacket</h3>
-                                <p class="carrinho-value font">R$ 100.00</p>
-                                <button class="font carrinho-button">Remover produto</button>
-                            </div>
-                        </li>
+                        <div class='carrinho-vazio  font'>
+                            <p><strong> Carrinho Vazio</strong> </p>
+                            adicione Itens
 
-                        <li class="li-carrinho">
-                            <figure class="carrinho-img-container">
-                                <img class="carrinho-img" src="./img/gorro.svg" alt="" />
-                            </figure>
-                            <div class="carrinho-descricao font">
-                                <h3 class="carrinho-nameItem font">Black Hat</h3>
-                                <p class="carrinho-value font">R$ 100.00</p>
-                                <button class="font carrinho-button">Remover produto</button>
-                            </div>
-                        </li>
-                        <li class="li-carrinho">
-                            <figure class="carrinho-img-container">
-                                <img class="carrinho-img" src="./img/camiseta_branca.svg" alt="" />
-                            </figure>
-                            <div class="carrinho-descricao font">
-                                <h3 class="carrinho-nameItem font">T-Shirt</h3>
-                                <p class="carrinho-value font">R$ 100.00</p>
-                                <button class="font carrinho-button">Remover produto</button>
-                            </div>
-                        </li>
+                        </div>
                     </ul>
                 </div>
-                <section class="total-compra font">
-                    <div class="total-compra-quantidade font">
-                        <p><strong>Quantidade:</strong> </p>
-                        <p>3</p>
-                    </div>
-                    <div class="total-compra-valor font">
-                        <p><strong>Total:</strong> </p>
-                        <p>200</p>
-                    </div>
-                </section>
+
+
+
             </div>
         </section>
     </section>
-    <script src="./js/index.js"></script>
     <script src="./js/database.js"></script>
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>
