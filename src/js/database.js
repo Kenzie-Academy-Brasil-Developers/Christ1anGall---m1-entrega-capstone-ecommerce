@@ -1,6 +1,24 @@
 // Banco de dados dos produtos
 
 const data = [{
+    id: 5,
+    img: "./src/img/camiseta_branca.svg",
+    nameItem: "Short-Sleeve T-Shirt",
+    description: "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
+    value: 100,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Camisetas"],
+  },
+  {
+    id: 6,
+    img: "./src/img/moletom.svg",
+    nameItem: "Champion Packable Jacket",
+    description: "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
+    value: 100,
+    addCart: "Adicionar ao carrinho",
+    tag: ["Camisetas"],
+  },
+  {
     id: 1,
     img: "./src/img/jaqueta.svg",
     nameItem: "Lightweight Jacket",
@@ -36,26 +54,6 @@ const data = [{
     addCart: "Adicionar ao carrinho",
     tag: ["Camisetas"],
   },
-  {
-    id: 5,
-    img: "./src/img/camiseta_branca.svg",
-    nameItem: "Short-Sleeve T-Shirt",
-    description: "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-  {
-    id: 6,
-    img: "./src/img/moletom.svg",
-    nameItem: "Champion Packable Jacket",
-    description: "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
-  },
-
 ];
-
 
 const dataCart = [];
