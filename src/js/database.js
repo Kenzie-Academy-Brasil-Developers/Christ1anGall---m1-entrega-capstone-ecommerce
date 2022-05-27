@@ -2,7 +2,7 @@
 
 const data = [{
     id: 1,
-    img: "/src/img/jaqueta.svg",
+    img: "./src/img/jaqueta.svg",
     nameItem: "Lightweight Jacket",
     description: "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
     value: 100,
@@ -11,7 +11,7 @@ const data = [{
   },
   {
     id: 2,
-    img: "/src/img/gorro.svg",
+    img: "./src/img/gorro.svg",
     nameItem: "Black Hat",
     description: "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
     value: 100,
@@ -20,7 +20,7 @@ const data = [{
   },
   {
     id: 3,
-    img: "/src/img/mascara.svg",
+    img: "./src/img/mascara.svg",
     nameItem: "Mask",
     description: "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
     value: 40,
@@ -54,6 +54,8 @@ const data = [{
     addCart: "Adicionar ao carrinho",
     tag: ["Camisetas"],
   },
+
 ];
+
 
 const dataCart = [];
